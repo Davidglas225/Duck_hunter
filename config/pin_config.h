@@ -1,6 +1,3 @@
-#ifndef PIN_CONFIG_H
-#define PIN_CONFIG_H
-
 // $[ACMP0]
 // [ACMP0]$
 
@@ -118,6 +115,4 @@
 #endif
 
 // [CUSTOM_PIN_NAME]$
-
-#endif // PIN_CONFIG_H
 

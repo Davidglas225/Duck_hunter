@@ -76,36 +76,17 @@
           </folder>
         </folder>
       </folder>
-      <folder name="service">
-        <folder name="device_init">
-          <folder name="inc">
-            <file name="sl_device_init_clocks.h" uri="studio:/sdk/platform/service/device_init/inc/sl_device_init_clocks.h"/>
-            <file name="sl_device_init_emu.h" uri="studio:/sdk/platform/service/device_init/inc/sl_device_init_emu.h"/>
-            <file name="sl_device_init_hfxo.h" uri="studio:/sdk/platform/service/device_init/inc/sl_device_init_hfxo.h"/>
-            <file name="sl_device_init_lfxo.h" uri="studio:/sdk/platform/service/device_init/inc/sl_device_init_lfxo.h"/>
-            <file name="sl_device_init_nvic.h" uri="studio:/sdk/platform/service/device_init/inc/sl_device_init_nvic.h"/>
-          </folder>
-          <folder name="src">
-            <file name="sl_device_init_emu_s0.c" uri="studio:/sdk/platform/service/device_init/src/sl_device_init_emu_s0.c"/>
-            <file name="sl_device_init_hfxo_s0.c" uri="studio:/sdk/platform/service/device_init/src/sl_device_init_hfxo_s0.c"/>
-            <file name="sl_device_init_lfxo_s0.c" uri="studio:/sdk/platform/service/device_init/src/sl_device_init_lfxo_s0.c"/>
-            <file name="sl_device_init_nvic.c" uri="studio:/sdk/platform/service/device_init/src/sl_device_init_nvic.c"/>
-          </folder>
-        </folder>
-        <folder name="system">
-          <folder name="src">
-            <file name="sl_system_init.c" uri="studio:/sdk/platform/service/system/src/sl_system_init.c"/>
-            <file name="sl_system_process_action.c" uri="studio:/sdk/platform/service/system/src/sl_system_process_action.c"/>
-          </folder>
-          <folder name="inc">
-            <file name="sl_system_init.h" uri="studio:/sdk/platform/service/system/inc/sl_system_init.h"/>
-            <file name="sl_system_process_action.h" uri="studio:/sdk/platform/service/system/inc/sl_system_process_action.h"/>
-          </folder>
-        </folder>
-      </folder>
       <folder name="emlib">
+        <folder name="src">
+          <file name="em_cmu.c" uri="studio:/sdk/platform/emlib/src/em_cmu.c"/>
+          <file name="em_core.c" uri="studio:/sdk/platform/emlib/src/em_core.c"/>
+          <file name="em_emu.c" uri="studio:/sdk/platform/emlib/src/em_emu.c"/>
+          <file name="em_gpio.c" uri="studio:/sdk/platform/emlib/src/em_gpio.c"/>
+          <file name="em_msc.c" uri="studio:/sdk/platform/emlib/src/em_msc.c"/>
+          <file name="em_system.c" uri="studio:/sdk/platform/emlib/src/em_system.c"/>
+          <file name="em_usart.c" uri="studio:/sdk/platform/emlib/src/em_usart.c"/>
+        </folder>
         <folder name="inc">
-          <file name="em_chip.h" uri="studio:/sdk/platform/emlib/inc/em_chip.h"/>
           <file name="em_cmu.h" uri="studio:/sdk/platform/emlib/inc/em_cmu.h"/>
           <file name="em_cmu_compat.h" uri="studio:/sdk/platform/emlib/inc/em_cmu_compat.h"/>
           <file name="sli_em_cmu.h" uri="studio:/sdk/platform/emlib/inc/sli_em_cmu.h"/>
@@ -122,14 +103,7 @@
           <file name="em_msc_compat.h" uri="studio:/sdk/platform/emlib/inc/em_msc_compat.h"/>
           <file name="em_system.h" uri="studio:/sdk/platform/emlib/inc/em_system.h"/>
           <file name="em_system_generic.h" uri="studio:/sdk/platform/emlib/inc/em_system_generic.h"/>
-        </folder>
-        <folder name="src">
-          <file name="em_cmu.c" uri="studio:/sdk/platform/emlib/src/em_cmu.c"/>
-          <file name="em_core.c" uri="studio:/sdk/platform/emlib/src/em_core.c"/>
-          <file name="em_emu.c" uri="studio:/sdk/platform/emlib/src/em_emu.c"/>
-          <file name="em_gpio.c" uri="studio:/sdk/platform/emlib/src/em_gpio.c"/>
-          <file name="em_msc.c" uri="studio:/sdk/platform/emlib/src/em_msc.c"/>
-          <file name="em_system.c" uri="studio:/sdk/platform/emlib/src/em_system.c"/>
+          <file name="em_usart.h" uri="studio:/sdk/platform/emlib/inc/em_usart.h"/>
         </folder>
       </folder>
       <folder name="common">
@@ -155,39 +129,14 @@
         </folder>
       </folder>
     </folder>
-    <folder name="hardware">
-      <folder name="board">
-        <folder name="src">
-          <file name="sl_board_init.c" uri="studio:/sdk/hardware/board/src/sl_board_init.c"/>
-          <file name="sl_board_control_gpio.c" uri="studio:/sdk/hardware/board/src/sl_board_control_gpio.c"/>
-        </folder>
-        <folder name="inc">
-          <file name="sl_board_control.h" uri="studio:/sdk/hardware/board/inc/sl_board_control.h"/>
-          <file name="sl_board_init.h" uri="studio:/sdk/hardware/board/inc/sl_board_init.h"/>
-        </folder>
-      </folder>
-    </folder>
   </folder>
-  <file name="app.cpp" linked="false" uri="studio:/sdk/app/common/example/empty_cpp/app.cpp"/>
-  <file name="main.cpp" linked="false" uri="studio:/sdk/app/common/example/empty_cpp/main.cpp"/>
-  <file name="app.h" linked="false" uri="studio:/sdk/app/common/example/empty_cpp/app.h"/>
-  <file name="readme.md" linked="false" uri="studio:/sdk/app/common/example/empty_cpp/readme.md"/>
-  <includePath uri="studio:/project/"/>
   <includePath uri="studio:/sdk/platform/Device/SiliconLabs/EFM32GG/Include"/>
-  <includePath uri="studio:/sdk/hardware/board/inc"/>
   <includePath uri="studio:/sdk/platform/CMSIS/Core/Include"/>
-  <includePath uri="studio:/sdk/platform/service/device_init/inc"/>
   <includePath uri="studio:/sdk/platform/emlib/inc"/>
   <includePath uri="studio:/sdk/platform/common/inc"/>
   <includePath uri="studio:/sdk/platform/common/toolchain/inc"/>
-  <includePath uri="studio:/sdk/platform/service/system/inc"/>
-  <macroDefinition name="DEBUG_EFM"/>
   <macroDefinition name="EFM32GG990F1024"/>
-  <macroDefinition name="HFXO_FREQ" value="48000000"/>
-  <macroDefinition name="SL_BOARD_NAME" value="&quot;BRD2200A&quot;"/>
-  <macroDefinition name="SL_BOARD_REV" value="&quot;B05&quot;"/>
   <macroDefinition name="SL_COMPONENT_CATALOG_PRESENT"/>
-  <libraryFile name="stdc++"/>
   <libraryFile name="gcc"/>
   <libraryFile name="c"/>
   <libraryFile name="m"/>
