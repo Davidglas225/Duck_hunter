@@ -1,0 +1,8 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+sdk: {id: gecko_sdk, version: 4.5.1}
+toolchain_settings: []
+component:
+- {id: EFM32GG990F1024}
+- {id: emlib_usart}
+ui_hints: {}
+
